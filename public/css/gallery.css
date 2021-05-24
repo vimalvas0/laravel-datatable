@@ -1,0 +1,94 @@
+body,html{
+	height:100%;
+	width:100%;
+}
+
+*{
+	margin:0;
+	padding:0;
+}
+
+#addImg{
+	margin:3rem 3rem 2rem 3rem;
+	background:white;
+	border:1px solid red;
+	padding:1rem;
+	cursor:pointer;
+	transition:.3s;
+}
+
+#addImg:hover{
+	box-shadow:4px 4px red;
+	transform:translate(-4px,-4px);
+}
+#addImg:active{
+	transform:translate(0px,0px);
+	box-shadow:none;
+}
+
+#gallery{
+	margin:2rem 3rem;
+	display:grid;
+	grid-template-columns:1fr 1fr 1fr;
+	grid-column-gap:3rem;
+	grid-row-gap:3rem;
+}
+
+#gallery .img{
+	position:relative;
+	border:1px solid lightgrey;	
+	padding:0.5rem;
+}
+
+#gallery .img img{
+	width:100%;
+}
+
+#gallery .img button{
+	width:100%;
+	background:white;
+	color:#BB0000;
+	border:1px solid salmon;
+	cursor:pointer;
+	position:relative;
+	padding:1rem 0rem;
+    transition:background-color .3s,color .2s;
+}
+
+#gallery .img button:hover{
+    background-color: red;
+    color:white;
+}
+
+
+.bg-modal{
+    width: 100%;
+    height : 100%;
+    background-color : rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.modal-content{
+    width: 500px;
+    height: 300px;
+    background-color : white;
+    border-radius : 4px;
+    text-align: center;
+    padding: 20px;
+    padding-top: 100px;
+    position: relative;
+}
+
+.close{
+    position: absolute;
+    top: 0;
+    right: 14px;
+    font-size : 42px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}

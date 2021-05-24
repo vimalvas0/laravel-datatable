@@ -1,16 +1,11 @@
 <x-home-table>
 
-@section('user')
-<ul>
-			<li><a href="">{{ auth()->user()->name }}</a>
-				<ul>
-					<li><a href="{{ route('home.logout') }} ">Logout</a>
-				</ul>
-			</li>
-</ul>
-@endsection
+
 
 @section('content')
+
+<a href="{{ route('gallery.index') }}"><button id="gallery">Go To Gallery</button></a>
+
 <table>
 	  <tr>
 	    <th>Name</th>

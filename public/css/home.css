@@ -95,3 +95,22 @@ table th {
 	background-color: #BB0000;
 	color: white;
 }
+
+
+#gallery{
+	margin:3rem 3rem 2rem 3rem;
+	background:white;
+	border:1px solid yellow;
+	padding:1rem;
+	cursor:pointer;
+	transition:.3s;
+}
+
+#gallery:hover{
+	box-shadow:4px 4px yellow;
+	transform:translate(-4px,-4px);
+}
+#gallery:active{
+	transform:translate(0px,0px);
+	box-shadow:none;
+}
